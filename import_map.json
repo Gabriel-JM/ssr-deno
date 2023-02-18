@@ -1,6 +1,0 @@
-{
-  "imports": {
-    "std/http": "https://deno.land/std@0.172.0/http/mod.ts",
-    "nano": "https://deno.land/x/nano@1.2.0/mod.ts"
-  }
-}

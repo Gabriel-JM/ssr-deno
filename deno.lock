@@ -35,6 +35,10 @@
     "https://deno.land/std@0.172.0/http/mod.ts": "b8039c604915f9b27fea8e251479ae30e4d15b1c01223b73fb0399e763fe2a5d",
     "https://deno.land/std@0.172.0/http/negotiation.ts": "32761c921afa7847cf767fe81c81785721abccc0db0fc51c7ec2a45868b4ee4a",
     "https://deno.land/std@0.172.0/http/server.ts": "cbb17b594651215ba95c01a395700684e569c165a567e4e04bba327f41197433",
-    "https://deno.land/x/nano@1.2.0/mod.ts": "1f36bdbf12cfd59ef92bc8795c45660e749b0660e4b0d5a19f6f32dd7d2fef34"
+    "https://deno.land/x/nano@1.2.0/mod.ts": "1f36bdbf12cfd59ef92bc8795c45660e749b0660e4b0d5a19f6f32dd7d2fef34",
+    "https://esm.sh/fast-xml-parser@4.1.2": "00a43d64876e914d3287925ca2fe9771d000ac98ad097f949ac1db4a90a21856",
+    "https://esm.sh/v106/fast-xml-parser@4.1.2/deno/fast-xml-parser.js": "786585439d9826142642767bb112efb1d458945feff5527781b4cfe12d3061e5",
+    "https://esm.sh/v106/fast-xml-parser@4.1.2/src/fxp.d.ts": "e0f1b829a99fb1abd00a44c525c2dc017bbd0442cda4d879a543c83d63ca974c",
+    "https://esm.sh/v106/strnum@1.0.5/deno/strnum.js": "c176345b1a0faac5d939b598c8ef3e73d4d2bb2f6dff5ac41e16205dddd34c86"
   }
 }

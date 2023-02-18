@@ -1,23 +1,27 @@
+import { genJSEvents } from './html-tag-fn.ts'
 import { serve } from 'std/http'
-import render from 'nano'
+import { example } from './example.ts'
 
-const body = await render(`
-  <div>
-    <h1>{title}</h1>
-    <p>{content}</p>
-  </div>
-`, {
-  title: 'Title Test',
-  content: '\
-    Lorem ipsum dolor sit amet, consectetur adipiscing elit\
-    sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. \
-    Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris \
-    nisi ut aliquip ex ea commodo consequat.\
-  '
-})
+const content = await example('My Title 1') + await example('My Title 2')
+const jsContent = genJSEvents()
 
 function handler() {
-  return new Response(body, {
+  const htmlText = `
+    <!DOCTYPE html>
+    <html>
+      <head>
+        <link rel="stylesheet" href="https://unpkg.com/@picocss/pico@1.*/css/pico.min.css">
+        <title>Deno SSR Test</title>
+      </head>
+      <body>
+        ${content}
+        <script>
+          ${jsContent}
+        </script>
+      </body>
+    </html>
+  `
+  return new Response(htmlText, {
     status: 200,
     headers: {
       'Content-Type': 'text/html'
